@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+   <!-- <script src="./index.js"></script>-->
+
+</head>
+<body>
+    <style>
+        .prediction-canvas {
+            width: 100px;
+            margin: 20px;
+        }
+
+        .prediction-div {
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+
+    <div class="container" style="padding: 20px">
+        <div class="card">
+            <div class="card-header">
+                <strong>TensorFlow.js Demo - Handwriting Recognition</strong>
+            </div>
+            <div class="card-body">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Log Output:</h5>
+                        <div id="log"></div>
+                    </div>
+                </div>
+                        <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Predict</h5>
+                        <!--<button type="button" class="btn btn-primary" id="..selectTestDataButton" disabled>Please wait until model is ready ...</button>-->
+                        <div id="predictionResult"></div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <canvas id="canvasDraw" width="140" height="140" style="border:solid 1px black; background-color: black;"></canvas>
+        <br/>
+        <button id="clearCanvasSimple" class="btn btn-primary" type="button">clear</button>
+        <button id="selectTestDataButton" class="btn btn-primary" type="button" disabled>Please wait until model is ready ...</button>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
