@@ -104,7 +104,7 @@ async function main() {
     await load();
     await train();
     document.getElementById('selectTestDataButton').disabled = false;
-    document.getElementById('selectTestDataButton').innerText = "Ramdomly Select Test Data And Predict";
+    document.getElementById('selectTestDataButton').innerText = "Send Drawing And Predict";
 }
 
 //Tämä funktio vertailee arvoja ja tekee päättää miksikä piirroksen tunnistaa
